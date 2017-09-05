@@ -1,0 +1,10 @@
+columns:
+    name:
+        label: 'Course Name'
+        type: text
+        searchable: true
+        sortable: true
+    price:
+        label: 'Course Price'
+        type: text
+        sortable: true

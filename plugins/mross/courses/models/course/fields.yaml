@@ -1,0 +1,49 @@
+fields:
+    name:
+        label: 'Course Name'
+        oc.commentPosition: ''
+        span: full
+        type: text
+    description:
+        label: 'Course Description'
+        size: ''
+        oc.commentPosition: ''
+        span: full
+        type: richeditor
+    price:
+        label: Price
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    slug:
+        label: Slug
+        oc.commentPosition: ''
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text
+    icon:
+        label: icon
+        oc.commentPosition: ''
+        mode: image
+        imageWidth: '100'
+        imageHeight: '100'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    course_gallery:
+        label: 'File upload'
+        span: auto
+        oc.commentPosition: ''
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        imageWidth: '80'
+        imageHeight: '80'
+        type: fileupload

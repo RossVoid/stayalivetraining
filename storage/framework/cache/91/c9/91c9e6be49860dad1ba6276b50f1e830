@@ -1,0 +1,13 @@
+1504593985a:1:{s:12:"homepage.htm";a:9:{s:8:"fileName";s:12:"homepage.htm";s:7:"content";s:641:"title = "Homepage"
+url = "/"
+layout = "default"
+is_hidden = 0
+==
+<div class="container">
+    <h1>Homepage</h1>
+    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>  
+</div>
+";s:5:"mtime";i:1504587367;s:6:"markup";s:569:"<div class="container">
+    <h1>Homepage</h1>
+    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>  
+</div>";s:4:"code";N;s:5:"title";s:8:"Homepage";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}

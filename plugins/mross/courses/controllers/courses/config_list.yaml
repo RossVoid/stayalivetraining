@@ -1,0 +1,11 @@
+title: Courses
+modelClass: Mross\Courses\Models\Course
+list: $/mross/courses/models/course/columns.yaml
+recordUrl: 'mross/courses/courses/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

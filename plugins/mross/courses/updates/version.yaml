@@ -1,0 +1,14 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table mross_courses_'
+    - builder_table_create_mross_courses_.php
+1.0.3:
+    - 'Updated table mross_courses_'
+    - builder_table_update_mross_courses_.php
+1.0.4:
+    - 'Updated table mross_courses_'
+    - builder_table_update_mross_courses__2.php
+1.0.5:
+    - 'Updated table mross_courses_'
+    - builder_table_update_mross_courses__3.php

@@ -1,0 +1,10 @@
+name: Courses
+form: $/mross/courses/models/course/fields.yaml
+modelClass: Mross\Courses\Models\Course
+defaultRedirect: mross/courses/courses
+create:
+    redirect: 'mross/courses/courses/update/:id'
+    redirectClose: mross/courses/courses
+update:
+    redirect: mross/courses/courses
+    redirectClose: mross/courses/courses

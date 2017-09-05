@@ -1,0 +1,11 @@
+plugin:
+    name: 'mross.courses::lang.plugin.name'
+    description: 'mross.courses::lang.plugin.description'
+    author: MRoss
+    icon: oc-icon-university
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Courses
+        url: mross/courses/courses
+        icon: icon-university

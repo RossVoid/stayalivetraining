@@ -1,0 +1,4 @@
+title: Courses
+modelClass: Mross\Courses\Models\Course
+toolbar:
+    buttons: reorder_toolbar
