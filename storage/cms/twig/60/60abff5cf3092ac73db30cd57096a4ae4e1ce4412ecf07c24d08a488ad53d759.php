@@ -39,7 +39,7 @@ class __TwigTemplate_65b4ec61ff548fd345c1d28a4fc8dcc7a640ef9a42af0ab2c910a34ebcf
         <meta name=\"generator\" content=\"\">
         <link rel=\"icon\" type=\"image/png\" href=\"";
         // line 11
-        echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/images/october.png");
+        echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/images/favicon.png");
         echo "\">
         <link href=\"";
         // line 12
@@ -62,43 +62,41 @@ class __TwigTemplate_65b4ec61ff548fd345c1d28a4fc8dcc7a640ef9a42af0ab2c910a34ebcf
         unset($context['__cms_partial_params']);
         // line 20
         echo "        </header>
-
         <!-- Content -->
         <section id=\"layout-content\">
             ";
-        // line 24
+        // line 23
         echo $this->env->getExtension('CMS')->pageFunction();
-        // line 25
+        // line 24
         echo "        </section>
-
         <!-- Footer -->
         <footer id=\"layout-footer\">
             ";
-        // line 29
+        // line 27
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("site/footer"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 30
+        // line 28
         echo "        </footer>
 
         <!-- Scripts -->
         <script src=\"";
-        // line 33
+        // line 31
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/dist/js/app.js");
         echo "\"></script>
         ";
-        // line 34
+        // line 32
         echo '<script src="'. Request::getBasePath()
                 .'/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
         echo '<script src="'. Request::getBasePath()
                     .'/modules/system/assets/js/framework.extras.js"></script>'.PHP_EOL;
         echo '<link rel="stylesheet" property="stylesheet" href="'. Request::getBasePath()
                     .'/modules/system/assets/css/framework.extras.css">'.PHP_EOL;
-        // line 35
+        // line 33
         echo "        ";
         echo $this->env->getExtension('CMS')->assetsFunction('js');
         echo $this->env->getExtension('CMS')->displayBlock('scripts');
-        // line 36
+        // line 34
         echo "
     </body>
 </html>";
@@ -116,7 +114,7 @@ class __TwigTemplate_65b4ec61ff548fd345c1d28a4fc8dcc7a640ef9a42af0ab2c910a34ebcf
 
     public function getDebugInfo()
     {
-        return array (  102 => 36,  98 => 35,  91 => 34,  87 => 33,  82 => 30,  78 => 29,  72 => 25,  70 => 24,  64 => 20,  60 => 19,  53 => 14,  50 => 13,  46 => 12,  42 => 11,  35 => 7,  31 => 6,  25 => 5,  19 => 1,);
+        return array (  100 => 34,  96 => 33,  89 => 32,  85 => 31,  80 => 28,  76 => 27,  71 => 24,  69 => 23,  64 => 20,  60 => 19,  53 => 14,  50 => 13,  46 => 12,  42 => 11,  35 => 7,  31 => 6,  25 => 5,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -139,7 +137,7 @@ class __TwigTemplate_65b4ec61ff548fd345c1d28a4fc8dcc7a640ef9a42af0ab2c910a34ebcf
         <meta name=\"author\" content=\"Michael Ross\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
         <meta name=\"generator\" content=\"\">
-        <link rel=\"icon\" type=\"image/png\" href=\"{{ 'assets/images/october.png'|theme }}\">
+        <link rel=\"icon\" type=\"image/png\" href=\"{{ 'assets/images/favicon.png'|theme }}\">
         <link href=\"{{ 'assets/dist/css/style.css'|theme }}\" rel=\"stylesheet\">
         {% styles %}
     </head>
@@ -149,12 +147,10 @@ class __TwigTemplate_65b4ec61ff548fd345c1d28a4fc8dcc7a640ef9a42af0ab2c910a34ebcf
         <header id=\"layout-header\">
             {% partial 'site/header' %}
         </header>
-
         <!-- Content -->
         <section id=\"layout-content\">
             {% page %}
         </section>
-
         <!-- Footer -->
         <footer id=\"layout-footer\">
             {% partial 'site/footer' %}

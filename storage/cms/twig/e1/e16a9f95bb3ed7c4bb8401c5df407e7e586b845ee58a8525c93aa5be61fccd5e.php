@@ -16,21 +16,20 @@ class __TwigTemplate_917f110615a5429752aa5b3dd2b4ddd1bf3a42bbe41d4208660a1b3bd82
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<div class=\"container\"> 
-    <!-- Logo Topper Header -->
+        echo "<!-- Logo Topper Header -->
     <div class=\"row hidden-xs topper\">
-        <div class=\"col-xs-7 col-sm-7\">
+        <div class=\"col-xs-offset-1 col-xs-7 col-sm-7\">
             <a href=\"/\"><img alt=\"";
-        // line 5
+        // line 4
         echo twig_escape_filter($this->env, twig_title_string_filter($this->env, $this->getAttribute($this->getAttribute(($context["this"] ?? null), "theme", array()), "logo", array())), "html", null, true);
         echo "\"  src=\"";
         echo $this->env->getExtension('Cms\Twig\Extension')->mediaFilter($this->getAttribute($this->getAttribute(($context["this"] ?? null), "theme", array()), "logo", array()));
-        echo "\" class=\"img-responsive\"></a>
+        echo "\" class=\"img-responsive img-topper\"></a>
         </div>
-        <div class=\"col-xs-5 col-xs-offset-1 col-sm-5 col-sm-offset-0 text-right \">
-            <p>
+        <div class=\"col-xs-5 col-xs-offset-1 col-sm-5 col-sm-offset-0 text-center \">
+            <p class=\"topper-phone\">
                 <i class=\"fa fa-phone fa-2x\" aria-hidden=\"true\"></i> <a href=\"tel:+";
-        // line 9
+        // line 8
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["this"] ?? null), "theme", array()), "business_phone", array()), "html", null, true);
         echo "\">";
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["this"] ?? null), "theme", array()), "business_phone", array()), "html", null, true);
@@ -38,11 +37,11 @@ class __TwigTemplate_917f110615a5429752aa5b3dd2b4ddd1bf3a42bbe41d4208660a1b3bd82
             </p>
             <p>
                 <a href=\"";
-        // line 12
+        // line 11
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["this"] ?? null), "theme", array()), "facebook_url", array()), "html", null, true);
         echo "\"><i class=\"fa fa-facebook-official fa-2x\" aria-hidden=\"true\"></i></a>
                 <a href=\"";
-        // line 13
+        // line 12
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["this"] ?? null), "theme", array()), "twitter_url", array()), "html", null, true);
         echo "\"><i class=\"fa fa-twitter-square fa-2x\" aria-hidden=\"true\"></i></a>
             </p>
@@ -59,17 +58,11 @@ class __TwigTemplate_917f110615a5429752aa5b3dd2b4ddd1bf3a42bbe41d4208660a1b3bd82
                     <span class=\"icon-bar\"></span>
                     <span class=\"icon-bar\"></span>
                 </button>
-                <a class=\"navbar-brand\" href=\"";
-        // line 28
-        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("homepage");
-        echo "\">";
-        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["this"] ?? null), "theme", array()), "site_name", array()), "html", null, true);
-        echo "</a>
             </div>
             <div class=\"collapse navbar-collapse navbar-main-collapse\">
                 <ul class=\"nav navbar-nav navbar-right\">
                     <li class=\"";
-        // line 32
+        // line 30
         if (($this->getAttribute($this->getAttribute(($context["this"] ?? null), "page", array()), "id", array()) == "homepage")) {
             echo "active";
         }
@@ -77,7 +70,7 @@ class __TwigTemplate_917f110615a5429752aa5b3dd2b4ddd1bf3a42bbe41d4208660a1b3bd82
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("homepage");
         echo "\">Home</a></li>
                     <li class=\"";
-        // line 33
+        // line 31
         if (($this->getAttribute($this->getAttribute(($context["this"] ?? null), "page", array()), "id", array()) == "classes")) {
             echo "active";
         }
@@ -85,7 +78,7 @@ class __TwigTemplate_917f110615a5429752aa5b3dd2b4ddd1bf3a42bbe41d4208660a1b3bd82
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("classes");
         echo "\">Classes</a></li>
                     <li class=\"";
-        // line 34
+        // line 32
         if (($this->getAttribute($this->getAttribute(($context["this"] ?? null), "page", array()), "id", array()) == "calendar")) {
             echo "active";
         }
@@ -95,8 +88,7 @@ class __TwigTemplate_917f110615a5429752aa5b3dd2b4ddd1bf3a42bbe41d4208660a1b3bd82
                 </ul>
             </div>
         </div>
-    </nav> <!-- End Nav -->
-</div> <!-- End of Header Container -->";
+    </nav> <!-- End Nav -->";
     }
 
     public function getTemplateName()
@@ -111,7 +103,7 @@ class __TwigTemplate_917f110615a5429752aa5b3dd2b4ddd1bf3a42bbe41d4208660a1b3bd82
 
     public function getDebugInfo()
     {
-        return array (  89 => 34,  81 => 33,  73 => 32,  64 => 28,  46 => 13,  42 => 12,  34 => 9,  25 => 5,  19 => 1,);
+        return array (  82 => 32,  74 => 31,  66 => 30,  45 => 12,  41 => 11,  33 => 8,  24 => 4,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -124,14 +116,13 @@ class __TwigTemplate_917f110615a5429752aa5b3dd2b4ddd1bf3a42bbe41d4208660a1b3bd82
 
     public function getSourceContext()
     {
-        return new Twig_Source("<div class=\"container\"> 
-    <!-- Logo Topper Header -->
+        return new Twig_Source("<!-- Logo Topper Header -->
     <div class=\"row hidden-xs topper\">
-        <div class=\"col-xs-7 col-sm-7\">
-            <a href=\"/\"><img alt=\"{{ this.theme.logo|title }}\"  src=\"{{ this.theme.logo|media }}\" class=\"img-responsive\"></a>
+        <div class=\"col-xs-offset-1 col-xs-7 col-sm-7\">
+            <a href=\"/\"><img alt=\"{{ this.theme.logo|title }}\"  src=\"{{ this.theme.logo|media }}\" class=\"img-responsive img-topper\"></a>
         </div>
-        <div class=\"col-xs-5 col-xs-offset-1 col-sm-5 col-sm-offset-0 text-right \">
-            <p>
+        <div class=\"col-xs-5 col-xs-offset-1 col-sm-5 col-sm-offset-0 text-center \">
+            <p class=\"topper-phone\">
                 <i class=\"fa fa-phone fa-2x\" aria-hidden=\"true\"></i> <a href=\"tel:+{{ this.theme.business_phone }}\">{{ this.theme.business_phone }}</a>
             </p>
             <p>
@@ -151,7 +142,6 @@ class __TwigTemplate_917f110615a5429752aa5b3dd2b4ddd1bf3a42bbe41d4208660a1b3bd82
                     <span class=\"icon-bar\"></span>
                     <span class=\"icon-bar\"></span>
                 </button>
-                <a class=\"navbar-brand\" href=\"{{ 'homepage'|page }}\">{{ this.theme.site_name }}</a>
             </div>
             <div class=\"collapse navbar-collapse navbar-main-collapse\">
                 <ul class=\"nav navbar-nav navbar-right\">
@@ -161,7 +151,6 @@ class __TwigTemplate_917f110615a5429752aa5b3dd2b4ddd1bf3a42bbe41d4208660a1b3bd82
                 </ul>
             </div>
         </div>
-    </nav> <!-- End Nav -->
-</div> <!-- End of Header Container -->", "D:\\xampp\\htdocs\\stayalive/themes/ross_sat/partials/site/header.htm", "");
+    </nav> <!-- End Nav -->", "D:\\xampp\\htdocs\\stayalive/themes/ross_sat/partials/site/header.htm", "");
     }
 }

@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Oswald);@charset "UTF-8";
 
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -1402,7 +1402,7 @@ html {
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
@@ -7499,7 +7499,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -7633,7 +7633,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -11441,6 +11441,42 @@ button.close {
   }
 }
 
+body {
+  background-image: url("/themes/ross_sat/assets/images/brickwall.png");
+  background-repeat: repeat;
+}
+
+.jumbotron {
+  min-height: 780px;
+  color: white;
+}
+
+.jumbotron-link a {
+  background: rgba(203, 26, 26, 0.75);
+  border-style: solid;
+  border-color: #fff;
+  border-width: 2px;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px 5px 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .jumbotron-link a {
+    font-size: 14px;
+  }
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+#footer {
+  background-color: white;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
 /* Makes images fully responsive */
 
 .img-responsive,
@@ -11506,6 +11542,19 @@ button.close {
 
 .navbar-right {
   margin-right: 0px;
+}
+
+header {
+  background-color: white;
+}
+
+.topper-phone {
+  font-size: 22px;
+}
+
+.img-topper {
+  max-height: 145px;
+  width: auto;
 }
 
 ul.footer-navigate {

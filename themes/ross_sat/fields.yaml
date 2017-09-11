@@ -62,4 +62,17 @@ tabs:
             type: mediafinder
             mode: image
             span: auto
+        jumbotron_background:
+            tab: Front Page
+            label: Jumbotron Background
+            type: mediafinder
+            mode: image
+            span: auto
+            comment: This shows up as the background of the jumbotron on the front end
+        jumbotron_content:
+            tab: Front Page
+            label: Content
+            type: richeditor
+            default: "<h2>Jumbotron Content</h2><p>Really good stuff</p>"
+            comment: This shows up in middle footer section on the front end
         

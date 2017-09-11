@@ -26,3 +26,38 @@
       -webkit-transform: translateY(0%);
     }
   }
+
+body {
+  background-image: url("/themes/ross_sat/assets/images/brickwall.png");
+  background-repeat: repeat;
+}
+
+.jumbotron{
+    min-height: 780px;
+    color: white;
+}
+
+.jumbotron-link a{
+  background: rgba(203, 26, 26, 0.75);
+  border-style: solid;
+  border-color: #fff;
+  border-width: 2px;
+  color:#fff;
+  text-decoration: none;
+  padding: 5px 10px 5px 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .jumbotron-link a{
+      font-size: 14px;
+    }
+}
+.navbar{
+  margin-bottom: 0px;
+}
+
+#footer{
+  background-color: white;
+  margin-top: 10px;
+  padding-top: 10px;
+}

@@ -10,7 +10,7 @@ description = "Default layout"
         <meta name="author" content="Michael Ross">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="generator" content="">
-        <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
+        <link rel="icon" type="image/png" href="{{ 'assets/images/favicon.png'|theme }}">
         <link href="{{ 'assets/dist/css/style.css'|theme }}" rel="stylesheet">
         {% styles %}
     </head>
@@ -20,12 +20,10 @@ description = "Default layout"
         <header id="layout-header">
             {% partial 'site/header' %}
         </header>
-
         <!-- Content -->
         <section id="layout-content">
             {% page %}
         </section>
-
         <!-- Footer -->
         <footer id="layout-footer">
             {% partial 'site/footer' %}

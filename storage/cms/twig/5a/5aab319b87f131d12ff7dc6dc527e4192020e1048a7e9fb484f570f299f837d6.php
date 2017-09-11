@@ -16,81 +16,81 @@ class __TwigTemplate_a52d2e5de59ecb5ca8b0145cc89ce1ec5e0a95cee3deca4a7c38c1fe5f5
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<div class=\"container\">
-    <h1>Homepage</h1>
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
+        echo "<div class=\"jumbotron\" style=\"background: url(";
+        echo $this->env->getExtension('Cms\Twig\Extension')->mediaFilter($this->getAttribute($this->getAttribute(($context["this"] ?? null), "theme", array()), "jumbotron_background", array()));
+        echo "); background-size: cover; background-repeat: no-repeat;\">
+  <div class=\"container\">
+    ";
+        // line 3
+        echo $this->getAttribute($this->getAttribute(($context["this"] ?? null), "theme", array()), "jumbotron_content", array());
+        echo "
+  </div>
+</div>
+    
+
     
     ";
-        // line 14
+        // line 9
         $context["records"] = $this->getAttribute(($context["builderList"] ?? null), "records", array());
-        // line 15
+        // line 10
         echo "    ";
         $context["displayColumn"] = $this->getAttribute(($context["builderList"] ?? null), "displayColumn", array());
-        // line 16
+        // line 11
         echo "    ";
         $context["noRecordsMessage"] = $this->getAttribute(($context["builderList"] ?? null), "noRecordsMessage", array());
-        // line 17
+        // line 12
         echo "    ";
         $context["detailsPage"] = $this->getAttribute(($context["builderList"] ?? null), "detailsPage", array());
-        // line 18
+        // line 13
         echo "    ";
         $context["detailsKeyColumn"] = $this->getAttribute(($context["builderList"] ?? null), "detailsKeyColumn", array());
-        // line 19
+        // line 14
         echo "    ";
         $context["detailsUrlParameter"] = $this->getAttribute(($context["builderList"] ?? null), "detailsUrlParameter", array());
-        // line 20
+        // line 15
         echo "
-
+<div class=\"container\">
     <div id=\"classes\" class=\"container-fluid text-center\">
         <div class=\"row slideanim\">   
             ";
-        // line 24
+        // line 19
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["records"] ?? null));
         $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["record"]) {
-            // line 25
+            // line 20
             echo "                <div class=\"col-sm-4\">
                     <img src=\"";
-            // line 26
+            // line 21
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["record"], "icon", array()), "thumb", array(0 => 100, 1 => ($context["auto"] ?? null)), "method"), "html", null, true);
             echo "\">
                     ";
-            // line 27
+            // line 22
             ob_start();
-            // line 28
+            // line 23
             echo "                        ";
             if (($context["detailsPage"] ?? null)) {
-                // line 29
+                // line 24
                 echo "                            <a href=\"";
                 echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter(($context["detailsPage"] ?? null), array(($context["detailsUrlParameter"] ?? null) => $this->getAttribute($context["record"], ($context["detailsKeyColumn"] ?? null))));
                 echo "\">
                         ";
             }
-            // line 31
+            // line 26
             echo "                            <h4>";
             echo twig_escape_filter($this->env, $this->getAttribute($context["record"], "name", array()), "html", null, true);
             echo "</h4>
                         ";
-            // line 32
+            // line 27
             if (($context["detailsPage"] ?? null)) {
-                // line 33
+                // line 28
                 echo "                            </a>
                         ";
             }
-            // line 35
+            // line 30
             echo "                    ";
             echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
-            // line 36
+            // line 31
             echo "                    ";
             echo $this->getAttribute($context["record"], "excerpt", array());
             echo "
@@ -99,7 +99,7 @@ class __TwigTemplate_a52d2e5de59ecb5ca8b0145cc89ce1ec5e0a95cee3deca4a7c38c1fe5f5
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 39
+            // line 34
             echo "                <div class=\"col-sm-4\">";
             echo twig_escape_filter($this->env, ($context["noRecordsMessage"] ?? null), "html", null, true);
             echo "</div>
@@ -108,35 +108,35 @@ class __TwigTemplate_a52d2e5de59ecb5ca8b0145cc89ce1ec5e0a95cee3deca4a7c38c1fe5f5
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['record'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 41
+        // line 36
         echo "
             ";
-        // line 42
+        // line 37
         if (($this->getAttribute(($context["records"] ?? null), "lastPage", array()) > 1)) {
-            // line 43
+            // line 38
             echo "                <ul class=\"pagination\">
                     ";
-            // line 44
+            // line 39
             if (($this->getAttribute(($context["records"] ?? null), "currentPage", array()) > 1)) {
-                // line 45
+                // line 40
                 echo "                        <li><a href=\"";
                 echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter($this->getAttribute($this->getAttribute(($context["this"] ?? null), "page", array()), "baseFileName", array()), array(($context["pageParam"] ?? null) => ($this->getAttribute(($context["records"] ?? null), "currentPage", array()) - 1)));
                 echo "\">&larr; Prev</a></li>
                     ";
             }
-            // line 47
+            // line 42
             echo "
                     ";
-            // line 48
+            // line 43
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(range(1, $this->getAttribute(($context["records"] ?? null), "lastPage", array())));
             foreach ($context['_seq'] as $context["_key"] => $context["page"]) {
-                // line 49
+                // line 44
                 echo "                        <li class=\"";
                 echo ((($this->getAttribute(($context["records"] ?? null), "currentPage", array()) == $context["page"])) ? ("active") : (null));
                 echo "\">
                             <a href=\"";
-                // line 50
+                // line 45
                 echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter($this->getAttribute($this->getAttribute(($context["this"] ?? null), "page", array()), "baseFileName", array()), array(($context["pageParam"] ?? null) => $context["page"]));
                 echo "\">";
                 echo twig_escape_filter($this->env, $context["page"], "html", null, true);
@@ -147,22 +147,22 @@ class __TwigTemplate_a52d2e5de59ecb5ca8b0145cc89ce1ec5e0a95cee3deca4a7c38c1fe5f5
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['page'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 53
+            // line 48
             echo "
                     ";
-            // line 54
+            // line 49
             if (($this->getAttribute(($context["records"] ?? null), "lastPage", array()) > $this->getAttribute(($context["records"] ?? null), "currentPage", array()))) {
-                // line 55
+                // line 50
                 echo "                        <li><a href=\"";
                 echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter($this->getAttribute($this->getAttribute(($context["this"] ?? null), "page", array()), "baseFileName", array()), array(($context["pageParam"] ?? null) => ($this->getAttribute(($context["records"] ?? null), "currentPage", array()) + 1)));
                 echo "\">Next &rarr;</a></li>
                     ";
             }
-            // line 57
+            // line 52
             echo "                </ul>
             ";
         }
-        // line 59
+        // line 54
         echo "        </div>
     </div>
     
@@ -181,7 +181,7 @@ class __TwigTemplate_a52d2e5de59ecb5ca8b0145cc89ce1ec5e0a95cee3deca4a7c38c1fe5f5
 
     public function getDebugInfo()
     {
-        return array (  166 => 59,  162 => 57,  156 => 55,  154 => 54,  151 => 53,  140 => 50,  135 => 49,  131 => 48,  128 => 47,  122 => 45,  120 => 44,  117 => 43,  115 => 42,  112 => 41,  103 => 39,  94 => 36,  91 => 35,  87 => 33,  85 => 32,  80 => 31,  74 => 29,  71 => 28,  69 => 27,  65 => 26,  62 => 25,  57 => 24,  51 => 20,  48 => 19,  45 => 18,  42 => 17,  39 => 16,  36 => 15,  34 => 14,  19 => 1,);
+        return array (  166 => 54,  162 => 52,  156 => 50,  154 => 49,  151 => 48,  140 => 45,  135 => 44,  131 => 43,  128 => 42,  122 => 40,  120 => 39,  117 => 38,  115 => 37,  112 => 36,  103 => 34,  94 => 31,  91 => 30,  87 => 28,  85 => 27,  80 => 26,  74 => 24,  71 => 23,  69 => 22,  65 => 21,  62 => 20,  57 => 19,  51 => 15,  48 => 14,  45 => 13,  42 => 12,  39 => 11,  36 => 10,  34 => 9,  25 => 3,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -194,18 +194,13 @@ class __TwigTemplate_a52d2e5de59ecb5ca8b0145cc89ce1ec5e0a95cee3deca4a7c38c1fe5f5
 
     public function getSourceContext()
     {
-        return new Twig_Source("<div class=\"container\">
-    <h1>Homepage</h1>
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
+        return new Twig_Source("<div class=\"jumbotron\" style=\"background: url({{ this.theme.jumbotron_background|media }}); background-size: cover; background-repeat: no-repeat;\">
+  <div class=\"container\">
+    {{ this.theme.jumbotron_content|raw }}
+  </div>
+</div>
+    
+
     
     {% set records = builderList.records %}
     {% set displayColumn = builderList.displayColumn %}
@@ -214,7 +209,7 @@ class __TwigTemplate_a52d2e5de59ecb5ca8b0145cc89ce1ec5e0a95cee3deca4a7c38c1fe5f5
     {% set detailsKeyColumn = builderList.detailsKeyColumn %}
     {% set detailsUrlParameter = builderList.detailsUrlParameter %}
 
-
+<div class=\"container\">
     <div id=\"classes\" class=\"container-fluid text-center\">
         <div class=\"row slideanim\">   
             {% for record in records %}

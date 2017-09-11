@@ -1,7 +1,6 @@
-1505063549a:1:{s:15:"site/footer.htm";a:5:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:2095:"<hr />
-<div id="footer">
+1505104761a:1:{s:15:"site/footer.htm";a:5:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:2120:"<div id="footer">
     <div class="container">
-        <div class="col-sm-4">
+        <div class="col-sm-3">
             <div class="row">   
                 <a href="/"><img alt="{{ this.theme.logo_footer|title }}"  src="{{ this.theme.logo_footer|media }}" class="img-responsive"></a>
             </div>
@@ -30,14 +29,14 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-offset-1 col-sm-3">
              <div class="row">
                  <h4>About Us</h4>
                  <hr>
                 {{ this.theme.footer_about|raw }}
              </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-offset-1 col-sm-3">
             <div class="row">
                 <h4>Navigate</h4>
                 <hr>
@@ -56,10 +55,9 @@
 <div class="webmaster-bar">
     <p>Any issues with this site please report to <a href="mailto:mross71690@gmail.com">Rossvoid</a></p>
 </div>
-";s:5:"mtime";i:1505025830;s:6:"markup";s:2094:"<hr />
-<div id="footer">
+";s:5:"mtime";i:1505100152;s:6:"markup";s:2119:"<div id="footer">
     <div class="container">
-        <div class="col-sm-4">
+        <div class="col-sm-3">
             <div class="row">   
                 <a href="/"><img alt="{{ this.theme.logo_footer|title }}"  src="{{ this.theme.logo_footer|media }}" class="img-responsive"></a>
             </div>
@@ -88,14 +86,14 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-offset-1 col-sm-3">
              <div class="row">
                  <h4>About Us</h4>
                  <hr>
                 {{ this.theme.footer_about|raw }}
              </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-offset-1 col-sm-3">
             <div class="row">
                 <h4>Navigate</h4>
                 <hr>

@@ -14,18 +14,14 @@ detailsUrlParameter = "slug"
 recordsPerPage = 6
 pageNumber = "{{ :page }}"
 ==
-<div class="container">
-    <h1>Homepage</h1>
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
+
+<div class="jumbotron" style="background: url({{ this.theme.jumbotron_background|media }}); background-size: cover; background-repeat: no-repeat;">
+  <div class="container">
+    {{ this.theme.jumbotron_content|raw }}
+  </div>
+</div>
+    
+
     
     {% set records = builderList.records %}
     {% set displayColumn = builderList.displayColumn %}
@@ -34,7 +30,7 @@ pageNumber = "{{ :page }}"
     {% set detailsKeyColumn = builderList.detailsKeyColumn %}
     {% set detailsUrlParameter = builderList.detailsUrlParameter %}
 
-
+<div class="container">
     <div id="classes" class="container-fluid text-center">
         <div class="row slideanim">   
             {% for record in records %}

@@ -16,13 +16,12 @@ class __TwigTemplate_b0a89c2c8c46b395e67aa9096ce9812cc94ca39fab925ea49f2577344c9
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<hr />
-<div id=\"footer\">
+        echo "<div id=\"footer\">
     <div class=\"container\">
-        <div class=\"col-sm-4\">
+        <div class=\"col-sm-3\">
             <div class=\"row\">   
                 <a href=\"/\"><img alt=\"";
-        // line 6
+        // line 5
         echo twig_escape_filter($this->env, twig_title_string_filter($this->env, $this->getAttribute($this->getAttribute(($context["this"] ?? null), "theme", array()), "logo_footer", array())), "html", null, true);
         echo "\"  src=\"";
         echo $this->env->getExtension('Cms\Twig\Extension')->mediaFilter($this->getAttribute($this->getAttribute(($context["this"] ?? null), "theme", array()), "logo_footer", array()));
@@ -34,7 +33,7 @@ class __TwigTemplate_b0a89c2c8c46b395e67aa9096ce9812cc94ca39fab925ea49f2577344c9
                 </div>
                 <div class=\"col-sm-10\">
                     ";
-        // line 13
+        // line 12
         echo $this->getAttribute($this->getAttribute(($context["this"] ?? null), "theme", array()), "business_address", array());
         echo "
                 </div>
@@ -45,7 +44,7 @@ class __TwigTemplate_b0a89c2c8c46b395e67aa9096ce9812cc94ca39fab925ea49f2577344c9
                 </div>
                 <div class=\"col-sm-10\">
                     <p>Phone: <a href=\"tel:+";
-        // line 21
+        // line 20
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["this"] ?? null), "theme", array()), "business_phone", array()), "html", null, true);
         echo "\">";
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["this"] ?? null), "theme", array()), "business_phone", array()), "html", null, true);
@@ -58,7 +57,7 @@ class __TwigTemplate_b0a89c2c8c46b395e67aa9096ce9812cc94ca39fab925ea49f2577344c9
                 </div>
                 <div class=\"col-sm-10\">
                     <p>Fax: <a href=\"fax:+";
-        // line 29
+        // line 28
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["this"] ?? null), "theme", array()), "business_fax", array()), "html", null, true);
         echo "\">";
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["this"] ?? null), "theme", array()), "business_fax", array()), "html", null, true);
@@ -66,17 +65,17 @@ class __TwigTemplate_b0a89c2c8c46b395e67aa9096ce9812cc94ca39fab925ea49f2577344c9
                 </div>
             </div>
         </div>
-        <div class=\"col-sm-4\">
+        <div class=\"col-sm-offset-1 col-sm-3\">
              <div class=\"row\">
                  <h4>About Us</h4>
                  <hr>
                 ";
-        // line 37
+        // line 36
         echo $this->getAttribute($this->getAttribute(($context["this"] ?? null), "theme", array()), "footer_about", array());
         echo "
              </div>
         </div>
-        <div class=\"col-sm-4\">
+        <div class=\"col-sm-offset-1 col-sm-3\">
             <div class=\"row\">
                 <h4>Navigate</h4>
                 <hr>
@@ -109,7 +108,7 @@ class __TwigTemplate_b0a89c2c8c46b395e67aa9096ce9812cc94ca39fab925ea49f2577344c9
 
     public function getDebugInfo()
     {
-        return array (  75 => 37,  62 => 29,  49 => 21,  38 => 13,  26 => 6,  19 => 1,);
+        return array (  74 => 36,  61 => 28,  48 => 20,  37 => 12,  25 => 5,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -122,10 +121,9 @@ class __TwigTemplate_b0a89c2c8c46b395e67aa9096ce9812cc94ca39fab925ea49f2577344c9
 
     public function getSourceContext()
     {
-        return new Twig_Source("<hr />
-<div id=\"footer\">
+        return new Twig_Source("<div id=\"footer\">
     <div class=\"container\">
-        <div class=\"col-sm-4\">
+        <div class=\"col-sm-3\">
             <div class=\"row\">   
                 <a href=\"/\"><img alt=\"{{ this.theme.logo_footer|title }}\"  src=\"{{ this.theme.logo_footer|media }}\" class=\"img-responsive\"></a>
             </div>
@@ -154,14 +152,14 @@ class __TwigTemplate_b0a89c2c8c46b395e67aa9096ce9812cc94ca39fab925ea49f2577344c9
                 </div>
             </div>
         </div>
-        <div class=\"col-sm-4\">
+        <div class=\"col-sm-offset-1 col-sm-3\">
              <div class=\"row\">
                  <h4>About Us</h4>
                  <hr>
                 {{ this.theme.footer_about|raw }}
              </div>
         </div>
-        <div class=\"col-sm-4\">
+        <div class=\"col-sm-offset-1 col-sm-3\">
             <div class=\"row\">
                 <h4>Navigate</h4>
                 <hr>
