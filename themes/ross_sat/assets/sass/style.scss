@@ -3,5 +3,10 @@
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+//Font Awesome
+@import "vendor/font-awesome";
 
 @import "custom";
+@import "carousel";
+@import "headerTopper";
+@import "footer";

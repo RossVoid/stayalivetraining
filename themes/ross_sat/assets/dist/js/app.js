@@ -84,6 +84,19 @@ module.exports = __webpack_require__(5);
 
 __webpack_require__(2);
 
+$(document).ready(function () {
+  $(window).scroll(function () {
+    $(".slideanim").each(function () {
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+      if (pos < winTop + 600) {
+        $(this).addClass("slide");
+      }
+    });
+  });
+});
+
 /***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {

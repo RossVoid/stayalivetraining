@@ -1,0 +1,65 @@
+tabs:
+    fields:
+        site_name:
+            tab: Business Info
+            label: Site name
+            comment: The website name as it should appear on the front-end
+            default: My Amazing Site!
+            span: auto
+        site_motto:
+            tab: Business Info
+            label: Site motto
+            comment: The website motto as it should appear on the front-end
+            default: Take a course save a life!
+            span: auto
+        business_address:
+            tab: Business Info
+            label: Business Address
+            type: richeditor
+            default: "<p>We teach people how to be awesome and save lives!!</p>"
+            comment: The address for your business
+            span: auto
+        business_phone:
+            tab: Business Info
+            label: Business Phone Number
+            comment: The phone number appears in multiple areas on the front-end
+            default: (248) Save.Lives
+            span: auto
+        business_fax:
+            tab: Business Info
+            label: Business Fax Number
+            comment: The fax number appears in multiple areas on the front-end
+            default: (248) Save.Lives
+            span: auto
+        facebook_url:
+            tab: Business Info
+            label: facebook URL
+            comment: Used to link to you facebook social media
+            default: http://facebook.com
+            span: auto
+        twitter_url:
+            tab: Business Info
+            label: twitter URL
+            comment: Used to link to you twitter social media
+            default: http://twitter.com
+            span: auto
+        logo:
+            tab: Header
+            label: Logo Header
+            type: mediafinder
+            mode: image
+            span: auto
+            comment: This shows up in the topper above the navbar on the front end
+        footer_about:
+            tab: Footer
+            label: Content
+            type: richeditor
+            default: "<p>We teach people how to be awesome and save lives!!</p>"
+            comment: This shows up in middle footer section on the front end
+        logo_footer:
+            tab: Footer
+            label: Logo Footer
+            type: mediafinder
+            mode: image
+            span: auto
+        

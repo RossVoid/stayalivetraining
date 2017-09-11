@@ -1,0 +1,53 @@
+title = "Calendar"
+url = "/calendar"
+layout = "default"
+is_hidden = 0
+
+[MonthEvents]
+month = "{{ :month }}"
+year = "{{ :year }}"
+weekstart = 0
+color = "red"
+loadstyle = 1
+title_max = 100
+usePermissions = 0
+category = "{{ :cat }}"
+dayspast = 0
+daysfuture = 60
+relations[] = "event"
+raw_data = 1
+descending = 1
+
+[EvList]
+color = "red"
+loadstyle = 1
+
+[Week]
+day = "{{ :day }}"
+month = "{{ :month }}"
+year = "{{ :year }}"
+weekstart = 0
+color = "red"
+loadstyle = 1
+
+[WeekEvents]
+day = "{{ :day }}"
+month = "{{ :month }}"
+year = "{{ :year }}"
+weekstart = 0
+color = "red"
+loadstyle = 1
+title_max = 100
+usePermissions = 0
+category = "{{ :cat }}"
+dayspast = 0
+daysfuture = 60
+relations[] = "event"
+raw_data = 0
+descending = 0
+==
+<div class="container">
+    {% component 'MonthEvents' %}
+    {% component 'EvList' %}
+    {% component 'WeekEvents' %}
+</div>

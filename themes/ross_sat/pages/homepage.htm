@@ -2,8 +2,77 @@ title = "Homepage"
 url = "/"
 layout = "default"
 is_hidden = 0
+
+[builderList]
+modelClass = "Mross\Courses\Models\Course"
+scope = "-"
+displayColumn = "name"
+noRecordsMessage = "No records found"
+detailsPage = "class"
+detailsKeyColumn = "slug"
+detailsUrlParameter = "slug"
+recordsPerPage = 6
+pageNumber = "{{ :page }}"
 ==
 <div class="container">
     <h1>Homepage</h1>
-    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>  
+    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
+    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
+    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
+    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
+    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
+    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
+    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
+    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
+    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
+    <p>Advantage First Aid Training and Safety, LLC understands and is dedicated to meeting the needs of our clients. As experienced firefighters, paramedics, emergency medical technicians (EMTs) nurses and other professionals, our team of highly qualified instructions can help you prepare for an emergency. Our students gain knowledge and understanding , preparing them for the reality of what they will see and need to do when faced with an emergency, allowing them to apply their skills with confidence.</p>   
+    
+    {% set records = builderList.records %}
+    {% set displayColumn = builderList.displayColumn %}
+    {% set noRecordsMessage = builderList.noRecordsMessage %}
+    {% set detailsPage = builderList.detailsPage %}
+    {% set detailsKeyColumn = builderList.detailsKeyColumn %}
+    {% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
+
+    <div id="classes" class="container-fluid text-center">
+        <div class="row slideanim">   
+            {% for record in records %}
+                <div class="col-sm-4">
+                    <img src="{{ record.icon.thumb(100,auto) }}">
+                    {% spaceless %}
+                        {% if detailsPage %}
+                            <a href="{{ detailsPage|page({ (detailsUrlParameter): attribute(record, detailsKeyColumn) }) }}">
+                        {% endif %}
+                            <h4>{{ record.name }}</h4>
+                        {% if detailsPage %}
+                            </a>
+                        {% endif %}
+                    {% endspaceless %}
+                    {{ record.excerpt | raw }}
+                </div>
+            {% else %}
+                <div class="col-sm-4">{{ noRecordsMessage }}</div>
+            {% endfor %}
+
+            {% if records.lastPage > 1 %}
+                <ul class="pagination">
+                    {% if records.currentPage > 1 %}
+                        <li><a href="{{ this.page.baseFileName|page({ (pageParam): (records.currentPage-1) }) }}">&larr; Prev</a></li>
+                    {% endif %}
+
+                    {% for page in 1..records.lastPage %}
+                        <li class="{{ records.currentPage == page ? 'active' : null }}">
+                            <a href="{{ this.page.baseFileName|page({ (pageParam): page }) }}">{{ page }}</a>
+                        </li>
+                    {% endfor %}
+
+                    {% if records.lastPage > records.currentPage %}
+                        <li><a href="{{ this.page.baseFileName|page({ (pageParam): (records.currentPage+1) }) }}">Next &rarr;</a></li>
+                    {% endif %}
+                </ul>
+            {% endif %}
+        </div>
+    </div>
+    
 </div>

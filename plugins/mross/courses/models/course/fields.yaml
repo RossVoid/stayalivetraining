@@ -47,3 +47,9 @@ fields:
         imageWidth: '80'
         imageHeight: '80'
         type: fileupload
+    excerpt:
+        label: Excerpt
+        size: ''
+        oc.commentPosition: ''
+        span: auto
+        type: richeditor

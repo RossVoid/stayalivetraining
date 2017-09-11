@@ -3,3 +3,5 @@ description: 'Stay Alive Training theme.'
 author: 'Michael Ross (Rossvoid)'
 homepage: 'https://rossvoid.com/themes/stayalivetraining'
 code: ''
+form: fields.yaml
+

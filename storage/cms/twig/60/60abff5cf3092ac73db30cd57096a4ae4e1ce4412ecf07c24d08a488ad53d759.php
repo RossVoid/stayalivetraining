@@ -20,8 +20,10 @@ class __TwigTemplate_65b4ec61ff548fd345c1d28a4fc8dcc7a640ef9a42af0ab2c910a34ebcf
 <html>
     <head>
         <meta charset=\"utf-8\">
-        <title>October CMS - ";
+        <title>";
         // line 5
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["this"] ?? null), "theme", array()), "site_name", array()), "html", null, true);
+        echo "- ";
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["this"] ?? null), "page", array()), "title", array()), "html", null, true);
         echo "</title>
         <meta name=\"description\" content=\"";
@@ -32,9 +34,9 @@ class __TwigTemplate_65b4ec61ff548fd345c1d28a4fc8dcc7a640ef9a42af0ab2c910a34ebcf
         // line 7
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["this"] ?? null), "page", array()), "meta_title", array()), "html", null, true);
         echo "\">
-        <meta name=\"author\" content=\"OctoberCMS\">
+        <meta name=\"author\" content=\"Michael Ross\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-        <meta name=\"generator\" content=\"OctoberCMS\">
+        <meta name=\"generator\" content=\"\">
         <link rel=\"icon\" type=\"image/png\" href=\"";
         // line 11
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/images/october.png");
@@ -114,7 +116,7 @@ class __TwigTemplate_65b4ec61ff548fd345c1d28a4fc8dcc7a640ef9a42af0ab2c910a34ebcf
 
     public function getDebugInfo()
     {
-        return array (  100 => 36,  96 => 35,  89 => 34,  85 => 33,  80 => 30,  76 => 29,  70 => 25,  68 => 24,  62 => 20,  58 => 19,  51 => 14,  48 => 13,  44 => 12,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
+        return array (  102 => 36,  98 => 35,  91 => 34,  87 => 33,  82 => 30,  78 => 29,  72 => 25,  70 => 24,  64 => 20,  60 => 19,  53 => 14,  50 => 13,  46 => 12,  42 => 11,  35 => 7,  31 => 6,  25 => 5,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -131,12 +133,12 @@ class __TwigTemplate_65b4ec61ff548fd345c1d28a4fc8dcc7a640ef9a42af0ab2c910a34ebcf
 <html>
     <head>
         <meta charset=\"utf-8\">
-        <title>October CMS - {{ this.page.title }}</title>
+        <title>{{ this.theme.site_name }}- {{ this.page.title }}</title>
         <meta name=\"description\" content=\"{{ this.page.meta_description }}\">
         <meta name=\"title\" content=\"{{ this.page.meta_title }}\">
-        <meta name=\"author\" content=\"OctoberCMS\">
+        <meta name=\"author\" content=\"Michael Ross\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-        <meta name=\"generator\" content=\"OctoberCMS\">
+        <meta name=\"generator\" content=\"\">
         <link rel=\"icon\" type=\"image/png\" href=\"{{ 'assets/images/october.png'|theme }}\">
         <link href=\"{{ 'assets/dist/css/style.css'|theme }}\" rel=\"stylesheet\">
         {% styles %}

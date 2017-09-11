@@ -16,45 +16,87 @@ class __TwigTemplate_917f110615a5429752aa5b3dd2b4ddd1bf3a42bbe41d4208660a1b3bd82
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<!-- Nav -->
-<nav id=\"layout-nav\" class=\"navbar navbar-default navbar-autohide\" role=\"navigation\">
-    <div class=\"container clearfix\">
-        <div class=\"navbar-header\">
-            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-main-collapse\">
-                <span class=\"sr-only\">Toggle navigation</span>
-                <span class=\"icon-bar\"></span>
-                <span class=\"icon-bar\"></span>
-                <span class=\"icon-bar\"></span>
-            </button>
-            <a class=\"navbar-brand\" href=\"";
-        // line 11
-        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("homepage");
-        echo "\">October Demo</a>
+        echo "<div class=\"container\"> 
+    <!-- Logo Topper Header -->
+    <div class=\"row hidden-xs topper\">
+        <div class=\"col-xs-7 col-sm-7\">
+            <a href=\"/\"><img alt=\"";
+        // line 5
+        echo twig_escape_filter($this->env, twig_title_string_filter($this->env, $this->getAttribute($this->getAttribute(($context["this"] ?? null), "theme", array()), "logo", array())), "html", null, true);
+        echo "\"  src=\"";
+        echo $this->env->getExtension('Cms\Twig\Extension')->mediaFilter($this->getAttribute($this->getAttribute(($context["this"] ?? null), "theme", array()), "logo", array()));
+        echo "\" class=\"img-responsive\"></a>
         </div>
-        <div class=\"collapse navbar-collapse navbar-main-collapse\">
-            <ul class=\"nav navbar-nav navbar-right\">
-                <li class=\"separator hidden-xs\"></li>
-                <li class=\"";
-        // line 16
+        <div class=\"col-xs-5 col-xs-offset-1 col-sm-5 col-sm-offset-0 text-right \">
+            <p>
+                <i class=\"fa fa-phone fa-2x\" aria-hidden=\"true\"></i> <a href=\"tel:+";
+        // line 9
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["this"] ?? null), "theme", array()), "business_phone", array()), "html", null, true);
+        echo "\">";
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["this"] ?? null), "theme", array()), "business_phone", array()), "html", null, true);
+        echo "</a>
+            </p>
+            <p>
+                <a href=\"";
+        // line 12
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["this"] ?? null), "theme", array()), "facebook_url", array()), "html", null, true);
+        echo "\"><i class=\"fa fa-facebook-official fa-2x\" aria-hidden=\"true\"></i></a>
+                <a href=\"";
+        // line 13
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["this"] ?? null), "theme", array()), "twitter_url", array()), "html", null, true);
+        echo "\"><i class=\"fa fa-twitter-square fa-2x\" aria-hidden=\"true\"></i></a>
+            </p>
+        </div>
+    </div> <!-- End Topper -->
+
+    <!-- Nav -->
+    <nav id=\"layout-nav\" class=\"navbar navbar-inverse navbar-autohide\" role=\"navigation\">
+        <div class=\"container clearfix\">
+            <div class=\"navbar-header\">
+                <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-main-collapse\">
+                    <span class=\"sr-only\">Toggle navigation</span>
+                    <span class=\"icon-bar\"></span>
+                    <span class=\"icon-bar\"></span>
+                    <span class=\"icon-bar\"></span>
+                </button>
+                <a class=\"navbar-brand\" href=\"";
+        // line 28
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("homepage");
+        echo "\">";
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["this"] ?? null), "theme", array()), "site_name", array()), "html", null, true);
+        echo "</a>
+            </div>
+            <div class=\"collapse navbar-collapse navbar-main-collapse\">
+                <ul class=\"nav navbar-nav navbar-right\">
+                    <li class=\"";
+        // line 32
         if (($this->getAttribute($this->getAttribute(($context["this"] ?? null), "page", array()), "id", array()) == "homepage")) {
             echo "active";
         }
         echo "\"><a href=\"";
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("homepage");
         echo "\">Home</a></li>
-                <li class=\"";
-        // line 17
+                    <li class=\"";
+        // line 33
         if (($this->getAttribute($this->getAttribute(($context["this"] ?? null), "page", array()), "id", array()) == "classes")) {
             echo "active";
         }
         echo "\"><a href=\"";
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("classes");
         echo "\">Classes</a></li>
-                
-            </ul>
+                    <li class=\"";
+        // line 34
+        if (($this->getAttribute($this->getAttribute(($context["this"] ?? null), "page", array()), "id", array()) == "calendar")) {
+            echo "active";
+        }
+        echo "\"><a href=\"";
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("calendar");
+        echo "\">Calendar</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>";
+    </nav> <!-- End Nav -->
+</div> <!-- End of Header Container -->";
     }
 
     public function getTemplateName()
@@ -69,7 +111,7 @@ class __TwigTemplate_917f110615a5429752aa5b3dd2b4ddd1bf3a42bbe41d4208660a1b3bd82
 
     public function getDebugInfo()
     {
-        return array (  47 => 17,  39 => 16,  31 => 11,  19 => 1,);
+        return array (  89 => 34,  81 => 33,  73 => 32,  64 => 28,  46 => 13,  42 => 12,  34 => 9,  25 => 5,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -82,27 +124,44 @@ class __TwigTemplate_917f110615a5429752aa5b3dd2b4ddd1bf3a42bbe41d4208660a1b3bd82
 
     public function getSourceContext()
     {
-        return new Twig_Source("<!-- Nav -->
-<nav id=\"layout-nav\" class=\"navbar navbar-default navbar-autohide\" role=\"navigation\">
-    <div class=\"container clearfix\">
-        <div class=\"navbar-header\">
-            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-main-collapse\">
-                <span class=\"sr-only\">Toggle navigation</span>
-                <span class=\"icon-bar\"></span>
-                <span class=\"icon-bar\"></span>
-                <span class=\"icon-bar\"></span>
-            </button>
-            <a class=\"navbar-brand\" href=\"{{ 'homepage'|page }}\">October Demo</a>
+        return new Twig_Source("<div class=\"container\"> 
+    <!-- Logo Topper Header -->
+    <div class=\"row hidden-xs topper\">
+        <div class=\"col-xs-7 col-sm-7\">
+            <a href=\"/\"><img alt=\"{{ this.theme.logo|title }}\"  src=\"{{ this.theme.logo|media }}\" class=\"img-responsive\"></a>
         </div>
-        <div class=\"collapse navbar-collapse navbar-main-collapse\">
-            <ul class=\"nav navbar-nav navbar-right\">
-                <li class=\"separator hidden-xs\"></li>
-                <li class=\"{% if this.page.id == 'homepage' %}active{% endif %}\"><a href=\"{{ 'homepage'|page }}\">Home</a></li>
-                <li class=\"{% if this.page.id == 'classes' %}active{% endif %}\"><a href=\"{{ 'classes'|page }}\">Classes</a></li>
-                
-            </ul>
+        <div class=\"col-xs-5 col-xs-offset-1 col-sm-5 col-sm-offset-0 text-right \">
+            <p>
+                <i class=\"fa fa-phone fa-2x\" aria-hidden=\"true\"></i> <a href=\"tel:+{{ this.theme.business_phone }}\">{{ this.theme.business_phone }}</a>
+            </p>
+            <p>
+                <a href=\"{{ this.theme.facebook_url }}\"><i class=\"fa fa-facebook-official fa-2x\" aria-hidden=\"true\"></i></a>
+                <a href=\"{{ this.theme.twitter_url }}\"><i class=\"fa fa-twitter-square fa-2x\" aria-hidden=\"true\"></i></a>
+            </p>
         </div>
-    </div>
-</nav>", "D:\\xampp\\htdocs\\stayalive/themes/ross_sat/partials/site/header.htm", "");
+    </div> <!-- End Topper -->
+
+    <!-- Nav -->
+    <nav id=\"layout-nav\" class=\"navbar navbar-inverse navbar-autohide\" role=\"navigation\">
+        <div class=\"container clearfix\">
+            <div class=\"navbar-header\">
+                <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-main-collapse\">
+                    <span class=\"sr-only\">Toggle navigation</span>
+                    <span class=\"icon-bar\"></span>
+                    <span class=\"icon-bar\"></span>
+                    <span class=\"icon-bar\"></span>
+                </button>
+                <a class=\"navbar-brand\" href=\"{{ 'homepage'|page }}\">{{ this.theme.site_name }}</a>
+            </div>
+            <div class=\"collapse navbar-collapse navbar-main-collapse\">
+                <ul class=\"nav navbar-nav navbar-right\">
+                    <li class=\"{% if this.page.id == 'homepage' %}active{% endif %}\"><a href=\"{{ 'homepage'|page }}\">Home</a></li>
+                    <li class=\"{% if this.page.id == 'classes' %}active{% endif %}\"><a href=\"{{ 'classes'|page }}\">Classes</a></li>
+                    <li class=\"{% if this.page.id == 'calendar' %}active{% endif %}\"><a href=\"{{ 'calendar'|page }}\">Calendar</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> <!-- End Nav -->
+</div> <!-- End of Header Container -->", "D:\\xampp\\htdocs\\stayalive/themes/ross_sat/partials/site/header.htm", "");
     }
 }
