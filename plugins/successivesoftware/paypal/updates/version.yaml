@@ -1,0 +1,4 @@
+1.0.1: Initialize plugin.
+1.0.2:
+    - Create database tables.
+    - create_orders_table.php

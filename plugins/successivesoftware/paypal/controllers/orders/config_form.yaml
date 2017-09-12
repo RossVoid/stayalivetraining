@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Order
+
+# Model Form Field configuration
+form: $/successivesoftware/paypal/models/order/fields.yaml
+
+# Model Class name
+modelClass: SuccessiveSoftware\Paypal\Models\Order
+
+# Default redirect location
+defaultRedirect: successivesoftware/paypal/orders
+
+# Create page
+create:
+    title: Create Order
+    redirect: successivesoftware/paypal/orders/update/:id
+    redirectClose: successivesoftware/paypal/orders
+
+# Update page
+update:
+    title: Edit Order
+    redirect: successivesoftware/paypal/orders
+    redirectClose: successivesoftware/paypal/orders
+
+# Preview page
+preview:
+    title: Preview Order

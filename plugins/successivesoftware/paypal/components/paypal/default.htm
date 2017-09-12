@@ -1,16 +1,4 @@
-title = "Calendar"
-url = "/calendar"
-layout = "default"
-is_hidden = 0
-
-[paypal]
-item_name = "My Product"
-amount = 45
-type = "buynow"
-==
-<div class="container">
-    
-    <form class="paypal-button" method="post" action="{{ paymentInfo.url }}" target="_top">
+<form class="paypal-button" method="post" action="{{ paymentInfo.url }}" target="_top">
 <div id="errorBox" class="hide"></div>
 <input name="button" value="{{ paymentInfo.type }}" type="hidden">
 <input name="item_name" value="{{ paymentInfo.item_name }}" type="hidden">
@@ -24,5 +12,3 @@ type = "buynow"
 <input name="bn" value="JavaScriptButton_{{ paymentInfo.type }}" type="hidden">
 <button class="paypal-button large" type="submit">{{ paymentInfo.text }}</button>
 </form>
-
-</div>

@@ -1,0 +1,26 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: Order ID
+        disabled: true
+    transaction_id:
+        label: Transaction ID
+        disabled: true
+    first_name:
+        label: First Name
+        disabled: false
+    last_name:
+        label: Last Name
+        disabled: false
+    total:
+        label: Total
+        disabled: false
+    payment_status:
+        label: Payment Status
+        disabled: false
+    order_date:
+        label: Order Date
+        disabled: false

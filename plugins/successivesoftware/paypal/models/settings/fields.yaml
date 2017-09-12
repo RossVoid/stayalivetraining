@@ -1,0 +1,40 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+tabs:
+    fields:
+
+
+
+        # paypal email
+        paypal_email:
+            span: left
+            label: 'Paypal Email'
+            comment: 'Your PayPal email address'
+            type: 'text'
+            tab: 'General'
+            placeholder: example@successivesoftwares.com
+
+        # currency code
+        currency_code:
+            span: right
+            label: 'Currency Code'
+            comment: 'The currency of the payment (example: USD, CAD, GBP, EUR)'
+            tab: 'General'
+            type: 'text'
+            placeholder: ''
+        # mode
+        mode:
+            span: left
+            label: 'Enable Test Mode'
+            comment: 'Check this option if you want to enable PayPal sandbox for testing'
+            type: 'checkbox'
+            tab: 'General'
+        # return page
+        return_page:
+            span: left
+            label: 'Return Page'
+            comment: 'if your page name "success" then page URL will be "/success"'
+            type: 'text'
+            tab: 'General'
