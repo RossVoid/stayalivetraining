@@ -16,5 +16,8 @@ storage/*.key
 Homestead.yaml
 Homestead.json
 
+#October Junk
+storage/
+
 # Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
 .rocketeer/
