@@ -17,10 +17,10 @@ Homestead.yaml
 Homestead.json
 
 #October Junk
-*/storage/
-*/vendor/
-*/install_files/
-*/bower_components/
+storage/
+config/
+bootstrap/
+modules/
 
 # Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
 .rocketeer/
