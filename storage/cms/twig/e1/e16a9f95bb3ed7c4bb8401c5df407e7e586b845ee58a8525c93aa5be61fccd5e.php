@@ -17,7 +17,7 @@ class __TwigTemplate_917f110615a5429752aa5b3dd2b4ddd1bf3a42bbe41d4208660a1b3bd82
     {
         // line 1
         echo "<!-- Logo Topper Header -->
-    <div class=\"row hidden-xs topper\">
+    <div class=\"row-fluid hidden-xs topper\">
         <div class=\"col-xs-offset-1 col-xs-7 col-sm-7\">
             <a href=\"/\"><img alt=\"";
         // line 4
@@ -117,7 +117,7 @@ class __TwigTemplate_917f110615a5429752aa5b3dd2b4ddd1bf3a42bbe41d4208660a1b3bd82
     public function getSourceContext()
     {
         return new Twig_Source("<!-- Logo Topper Header -->
-    <div class=\"row hidden-xs topper\">
+    <div class=\"row-fluid hidden-xs topper\">
         <div class=\"col-xs-offset-1 col-xs-7 col-sm-7\">
             <a href=\"/\"><img alt=\"{{ this.theme.logo|title }}\"  src=\"{{ this.theme.logo|media }}\" class=\"img-responsive img-topper\"></a>
         </div>

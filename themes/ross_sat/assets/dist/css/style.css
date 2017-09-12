@@ -11467,16 +11467,6 @@ body {
   }
 }
 
-.navbar {
-  margin-bottom: 0px;
-}
-
-#footer {
-  background-color: white;
-  margin-top: 10px;
-  padding-top: 10px;
-}
-
 /* Makes images fully responsive */
 
 .img-responsive,
@@ -11557,6 +11547,10 @@ header {
   width: auto;
 }
 
+.navbar {
+  margin-bottom: 0px;
+}
+
 ul.footer-navigate {
   list-style: outside none none;
   margin: 0;
@@ -11579,6 +11573,11 @@ ul.footer-navigate li {
   color: white;
   text-align: center;
   margin: 0;
+}
+
+#footer {
+  background-color: white;
   margin-top: 10px;
+  padding-top: 10px;
 }
 
